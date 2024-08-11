@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS One shot</title>
+    <!-- external CSS -->
+     <link rel="stylesheet" href="./style.css">
+    
+    <!-- internal CSS -->
+    <style>
+        p{
+            
+            color: #ffe4c4;
+            margin: 12px;
+            padding: 10px;
+            
+        }
+        
+        
+        /* class selector 
+        .line1{
+            background-color: aqua;
+            
+            color: black;
+        }
+        .line2{
+            background-color: pink;
+            
+            color: Black;
+        }
+        */
+        
+        
+        /* id selector 
+        #line3{
+            background-color: white;
+            
+            color: #000000;
+        }
+        */
+        
+        
+        /* attribute selector 
+        input[type="text"]{
+            padding: 10px;
+            
+            margin: 10px;
+            
+            background-color: #ffe4c4;
+            
+            border: 2px solid #00ffff;
+        }
+        */
+        
+        
+        /* pseudo selector 
+        button:hover{
+            background-color: #ffe4c4;
+            
+            padding: 10px;
+            
+            border: 2px solid #00ffff;
+        }
+        */
+
+        
+        /* Selector list */
+        h1,p{
+            color: #ffe4c4;
+            background-color: #a52a2a;
+        }
+
+        
+        /* CSS Styling */
+        .styling{
+            color: #00ffff;
+            background-color:rgb(250, 0, 0);
+            
+            /* padding: 100px; top right bottom left*/
+            
+            /* padding-top:100px ;
+           
+            padding-right:100px ;
+            
+            padding-bottom:100px ;
+            
+            padding-left:100px ; */
+            
+            padding: 100px 25px 100px 25px;
+            
+            /* border: 5px solid aqua; */
+            border-width: 5px;
+            border-style: solid;
+            border-color: #00ffff;
+        }
+        
+        
+        /* Assighnment 
+        body{
+            background-image: url(twin-towers.webp);
+        }
+        */
+
+        
+        /* text decoration */
+        .txt{
+            text-decoration: underline ;
+            
+            /* text-decoration: line-through; */
+            
+            text-transform: uppercase;
+            text-align: center;
+            font-family: cursive;
+            font-style: italic;
+            font-weight: bold; /*100 to 900 */
+            font-size: 30px;
+            line-height: 40px;
+        }
+        
+        /* Flexbox- change default direction*/
+        .container1{
+            display: flex;
+            border: 1px dashed green;
+
+            flex-direction:row;
+            justify-content: center;
+            /* justify-content:space-evenly;
+            
+            justify-content:space-between;
+            
+            justify-content:space-around; */
+            gap: 10px;
+        }
+        .container2{
+            display: flex;
+            border: 1px dashed red;
+
+            flex-direction:column;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .box{
+            color: white;
+            height: 100px;
+            width: 100px;
+            border: 1px solid white;
+            /* margin: 7px; */
+        }
+
+        /* grid */
+        .grid-cont{
+            display: grid;
+            
+            color: white;
+
+            /* grid-template-columns: 250px 250px 400px;*/
+            
+            /* grid-template-columns: auto auto auto; */  /*takes display size*/ 
+            
+            /* grid-template-columns: 1fr 2fr 3fr;*/  /*fractional units*/
+            
+            grid-template-columns: repeat(3,1fr);
+
+            /* grid-template-rows: 400px 400px 400px; */
+
+            border: 1px dashed purple;
+            margin-top: 10px;
+            padding: 10px;
+            /* gap: 10px 40px; */
+            row-gap: 10px;
+            column-gap: 40px;
+        }
+        .grid-item{
+            height: 100px;
+            /* width: 100px; */
+            border: 2px solid aqua;
+        }
+
+        .one{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .two{
+            
+            grid-row-start:2 ;
+            grid-row-end: 4;
+        }
+        </style>
+</head>
+<body>
+    <h1>PW SKILLS</h1>
+    <!-- 3types of CSS 
+            Inline
+            Internal
+            External -->
+    <!-- inline CSS -->
+    <!-- <p style="background-color: bisque; color: black; margin: 100px; padding: 100px;;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam fuga, maxime provident harum facilis obcaecati architecto necessitatibus minus natus hic reprehenderit reiciendis! Quos.</p> -->
+
+    
+    <!-- ID AND CLASS Selector 
+    <p class="line1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, esse!</p>
+
+    <p class="line2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, esse!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, esse!</p>
+
+    <p id="line3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, esse!</p> -->
+
+    
+    <!-- Attribute selector 
+    <input type="text"> -->
+
+    
+    <!-- Pseudo Selector 
+    <button>Hover me</button>-->
+    
+    
+    <!-- CSS styling 
+     <p class="styling">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo facilis fugit, quasi nemo dolore corporis ipsa consectetur ea mollitia consequatur rem error labore dolorum dolor ducimus officiis, in molestiae maxime. Iure iste quae facilis!</p>-->
+
+    
+     <!-- text decoration -->
+     <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit consectetur perspiciatis tempora voluptatem nostrum est soluta sed expedita, cupiditate a commodi maxime ea minima. Deserunt.</p>
+     
+     <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit consectetur perspiciatis tempora voluptatem nostrum est soluta sed expedita, cupiditate a commodi maxime ea minima. Deserunt.</p>
+
+     
+     
+    <!-- flexbox -->
+     <div class="container1">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+     </div>
+     <div class="container2">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+     </div>
+
+
+
+    <!-- grid -->
+     <div class="grid-cont">
+        <div class="grid-item one">1</div>
+        <div class="grid-item two">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+
+     </div>
+    </body>
+</html>
